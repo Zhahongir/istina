@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+div, a, button, span, p {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+// Blocks
+@import '../scss/fonts';
+@import '../scss/mixins';
+
+@import '../scss/blocks/header';
+@import '../scss/blocks/promo';
+@import '../scss/blocks/footer';
+
+@import '../scss/blocks/products';
+@import '../scss/blocks/card';
+@import '../scss/blocks/fashion';
+@import '../scss/blocks/news';
+@import '../scss/blocks/cart';
+@import '../scss/blocks/delivery';
+
+@import '../scss/blocks/filter';
+
+// Responsive
+@import '../scss/responsive/1199px';
+@import '../scss/responsive/991px';
+@import '../scss/responsive/767px';
+@import '../scss/responsive/575px';

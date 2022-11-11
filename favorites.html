@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранные | Istina</title>
+
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
+    <link rel="apple-touch-icon" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__wrap__left">
+                    <div class="header__wrap__left__hamburger">
+                        <span class="header__wrap__left__hamburger__span"></span>
+                        <span class="header__wrap__left__hamburger__span"></span>
+                        <span class="header__wrap__left__hamburger__span"></span>
+                    </div>
+                    <a href="index.html" class="header__wrap__left__logo"></a>
+                </div>
+                <div class="header__wrap__right">
+                    <div class="header__wrap__right__search">
+                        <form action="search.html" method="post" class="header__wrap__right__search__form" id="searchFormInput">
+                            <div class="header__wrap__right__search__form__inner">
+                                <input type="text" placeholder="ПОИСК" class="header__wrap__right__search__form__inner__input">
+                                <img src="icons/close.svg" alt="close" class="header__wrap__right__search__form__inner__close" onclick="searchIconClose()">
+                            </div>
+                        </form>
+                        <img src="icons/search.svg" alt="search" class="header__wrap__right__search__icon" onclick="searchIcon()">
+                    </div>
+                    <a href="#" class="header__wrap__right__account">
+                        <img src="icons/account.svg" alt="account" class="header__wrap__right__account__icon">
+                    </a>
+                    <a href="favorites.html" class="header__wrap__right__favorite">
+                        <img src="icons/heart.svg" alt="favorite" class="header__wrap__right__favorite__icon">
+                        <div class="header__wrap__right__favorite__count">
+                            <span class="header__wrap__right__favorite__count__number">2</span>
+                        </div>
+                    </a>
+                    <a href="cart.html" class="header__wrap__right__cart">
+                        <img src="icons/cart.svg" alt="" class="header__wrap__right__cart__icon">
+                        <div class="header__wrap__right__cart__count">
+                            <span class="header__wrap__right__cart__count__number">2</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <div class="products__head">
+                <h4 class="products__head__name">Избранное</h4>
+            </div>
+            <div class="products__wrap">
+                <a href="card.html" class="products__wrap__item">
+                    <div class="products__wrap__item__head">
+                        <img src="images/products/item-3.webp" alt="photo" class="products__wrap__item__head__photo">
+                        <img src="images/products/item-1-2.webp" alt="photo" class="products__wrap__item__head__photo-second favorites-two-photo">
+                        <object class="products__wrap__item__head__favorite">
+                            <input id="heart-item-one" type="checkbox" checked class="products__wrap__item__head__favorite__input">
+                            <label for="heart-item-one" class="products__wrap__item__head__favorite__label"></label>
+                        </object>
+                    </div>
+                    <div class="products__wrap__item__content">
+                        <h3 class="products__wrap__item__content__title">Брюки «MEN’S»</h3>
+                        <p class="products__wrap__item__content__price">9 000 ₽</p>
+                    </div>
+                </a>
+                <a href="card.html" class="products__wrap__item">
+                    <div class="products__wrap__item__head">
+                        <img src="images/products/item-4.webp" alt="photo" class="products__wrap__item__head__photo">
+                        <img src="images/products/item-1-2.webp" alt="photo" class="products__wrap__item__head__photo-second favorites-two-photo">
+                        <object class="products__wrap__item__head__favorite">
+                            <input id="heart-item-second" type="checkbox" checked class="products__wrap__item__head__favorite__input">
+                            <label for="heart-item-second" class="products__wrap__item__head__favorite__label"></label>
+                        </object>
+                    </div>
+                    <div class="products__wrap__item__content">
+                        <h3 class="products__wrap__item__content__title">Брюки «MEN’S»</h3>
+                        <p class="products__wrap__item__content__price">9 000 ₽</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <h5 class="footer__wrap__title footer__wrap__title-other">
+                    СЛЕДИТЕ ЗА НАМИ
+                </h5>
+                <div class="footer__wrap__social footer__wrap__social-other">
+                    <a href="#" target="_blank" class="footer__wrap__social__link">telegram</a>
+                    <a href="#" target="_blank" class="footer__wrap__social__link">vk</a>
+                    <a href="#" target="_blank" class="footer__wrap__social__link">pinterest</a>
+                </div>
+                <div class="footer__wrap__content footer__wrap__content-other">
+                    <a href="#" target="_blank" class="footer__wrap__content__link">контакты</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">подарочная карта</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">УСЛОВИЯ ПОКУПКИ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Menu -->
+    <div class="bg-menu"></div>
+
+    <div class="menu ">
+        <div class="menu__inner">
+            <div class="menu__inner__close">
+                <img src="icons/close.svg" alt="close" class="menu__inner__close__icon">
+            </div>
+            <h5 class="menu__inner__title">Каталог</h5>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item menu__inner__nav__item-exception">
+                    <a href="news.html" class="menu__inner__nav__item__link">Новинки</a>
+                </li>
+                <li class="menu__inner__nav__item">
+                    <div class="accordion-1 accordion">
+                        <button class="menu__accordion__control accordion__control" aria-expanded="false">
+                            <span class="menu__accordion__control__title">Одежда</span>
+                            <img src="icons/arrow-down.svg" alt="arrow down" class="menu__accordion__control__icon">
+                        </button>
+                        <div class="menu__accordion__content accordion__content" aria-hidden="true">
+                            <ul class="menu__accordion__content__list">
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="products.html" class="menu__accordion__content__list__item__link">СМОТРЕТЬ ВСЁ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ВЕРХНЯЯ ОДЕЖДА</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ЖАКЕТЫ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">БРЮКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТОПЫ И ФУТБОЛКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТРИКОТАЖ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">РУБАШКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТОЛСТОВКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ПЛАТЬЯ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filter">
+        <div class="filter__inner">
+            <div class="filter__inner__close">
+                <img src="icons/close.svg" alt="close" class="filter__inner__close__icon">
+            </div>
+            <div class="filter__inner__header">
+                <h5 class="filter__inner__header__title">Фильтры</h5>
+                <a href="#" class="filter__inner__header__reset">Сбросить</a>
+            </div>
+            <ul class="filter__inner__nav">
+                <li class="filter__inner__nav__item">
+                    <div class="accordion-2 accordion">
+                        <button class="filter__accordion__control accordion__control" aria-expanded="false">
+                            <span class="filter__accordion__control__title">Цена</span>
+                            <img src="icons/arrow-down.svg" alt="arrow down" class="filter__accordion__control__icon">
+                        </button>
+                        <div class="filter__accordion__content accordion__content" aria-hidden="true">
+                            <div class="filter__accordion__content__range">
+                                <div class="filter__accordion__content__range__slider">
+                                    <div class="filter__accordion__content__range__slider__progress"></div>
+                                </div>
+                                <div class="filter__accordion__content__range__bar">
+                                    <input type="range" class="filter__accordion__content__range__bar__min bar-min" min="0" step="50" max="50000" value="0">
+                                    <input type="range" class="filter__accordion__content__range__bar__max" min="0" step="50" max="50000" value="50000">
+                                </div>
+
+                                <div class="filter__accordion__content__range__inputs">
+                                    <div class="filter__accordion__content__range__inputs__field">
+                                        <label for="min-price" class="filter__accordion__content__range__inputs__field__label">от</label>
+                                        <input type="number" id="min-price" value="0" class="filter__accordion__content__range__inputs__field__zone range-input-min">
+                                    </div>
+                                    <div class="filter__accordion__content__range__inputs__field">
+                                        <label for="max-price" class="filter__accordion__content__range__inputs__field__label">до</label>
+                                        <input type="number" id="max-price" value="50000" class="filter__accordion__content__range__inputs__field__zone range-input-max">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="filter__inner__nav__item">
+                    <div class="accordion-3 accordion">
+                        <button class="filter__accordion__control accordion__control" aria-expanded="false">
+                            <span class="filter__accordion__control__title">Размер</span>
+                            <img src="icons/arrow-down.svg" alt="arrow down" class="filter__accordion__control__icon">
+                        </button>
+                        <div class="filter__accordion__content accordion__content" aria-hidden="true">
+                            <form action="#" class="filter__accordion__content__list__form">
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="sizeOne" class="filter__accordion__content__list__form__item__input" name="productSize">
+                                    <label for="sizeOne" class="filter__accordion__content__list__form__item__title">XS</label>
+                                </div>
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="sizeSecond" class="filter__accordion__content__list__form__item__input" name="productSize">
+                                    <label for="sizeSecond" class="filter__accordion__content__list__form__item__title">S</label>
+                                </div>
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="sizeThree" class="filter__accordion__content__list__form__item__input" name="productSize">
+                                    <label for="sizeThree" class="filter__accordion__content__list__form__item__title">M</label>
+                                </div>
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="sizeFourth" class="filter__accordion__content__list__form__item__input" name="productSize">
+                                    <label for="sizeFourth" class="filter__accordion__content__list__form__item__title">L</label>
+                                </div>
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="sizeFive" class="filter__accordion__content__list__form__item__input" name="productSize">
+                                    <label for="sizeFive" class="filter__accordion__content__list__form__item__title">ONE SIZE</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="filter__inner__nav__item">
+                    <div class="accordion-4 accordion">
+                        <button class="filter__accordion__control accordion__control" aria-expanded="false">
+                            <span class="filter__accordion__control__title">Тип товара</span>
+                            <img src="icons/arrow-down.svg" alt="arrow down" class="filter__accordion__control__icon">
+                        </button>
+                        <div class="filter__accordion__content accordion__content" aria-hidden="true">
+                            <form action="#" class="filter__accordion__content__list__form">
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="typeClotchesOne" class="filter__accordion__content__list__form__item__input" name="productType">
+                                    <label for="typeClotchesOne" class="filter__accordion__content__list__form__item__title">Тренч</label>
+                                </div>
+                                <div class="filter__accordion__content__list__form__item">
+                                    <input type="checkbox" id="typeClotchesSecond" class="filter__accordion__content__list__form__item__input" name="productType">
+                                    <label for="typeClotchesSecond" class="filter__accordion__content__list__form__item__title">Жилет</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="filter__enter">Применить</a>
+    </div>
+
+
+    <svg display="none">
+        <symbol id="heart" viewBox="0 0 21 18">
+            <g>
+                <path d="M10.7872 18C10.4991 18 10.2214 17.8957 10.005 17.7061C9.18769 16.9914 8.3997 16.3198 7.70447 15.7274L7.70092 15.7243C5.66262 13.9873 3.90247 12.4873 2.6778 11.0096C1.3088 9.35765 0.671143 7.79138 0.671143 6.08032C0.671143 4.41788 1.24119 2.88418 2.27616 1.76153C3.32348 0.625613 4.76055 0 6.32312 0C7.49099 0 8.56054 0.369224 9.50197 1.09733C9.97708 1.46486 10.4077 1.91466 10.7872 2.43932C11.1667 1.91466 11.5972 1.46486 12.0725 1.09733C13.0139 0.369224 14.0835 0 15.2513 0C16.8138 0 18.251 0.625613 19.2983 1.76153C20.3333 2.88418 20.9032 4.41788 20.9032 6.08032C20.9032 7.79138 20.2657 9.35765 18.8967 11.0094C17.672 12.4873 15.912 13.9872 13.874 15.724C13.1775 16.3173 12.3883 16.99 11.5691 17.7064C11.3529 17.8957 11.075 18 10.7872 18ZM6.32312 1.18516C5.09551 1.18516 3.96777 1.67509 3.14735 2.56481C2.31475 3.46796 1.85615 4.71641 1.85615 6.08032C1.85615 7.5194 2.391 8.80644 3.59021 10.2534C4.74928 11.652 6.47331 13.1212 8.46947 14.8224L8.47317 14.8255C9.17102 15.4202 9.96211 16.0944 10.7855 16.8144C11.6137 16.0931 12.4061 15.4177 13.1053 14.8221C15.1013 13.1209 16.8252 11.652 17.9842 10.2534C19.1833 8.80644 19.7182 7.5194 19.7182 6.08032C19.7182 4.71641 19.2596 3.46796 18.4269 2.56481C17.6067 1.67509 16.4788 1.18516 15.2513 1.18516C14.3521 1.18516 13.5264 1.47103 12.7974 2.03475C12.1477 2.53734 11.6951 3.17268 11.4297 3.61723C11.2933 3.84583 11.0531 3.98228 10.7872 3.98228C10.5212 3.98228 10.281 3.84583 10.1446 3.61723C9.87937 3.17268 9.42679 2.53734 8.77695 2.03475C8.04791 1.47103 7.22225 1.18516 6.32312 1.18516Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/accardion.js"></script> -->
+    <script src="js/filter.js"></script>
+    <script src="js/accordion.js"></script>
+
+
+    <!-- <script>
+        const accordion1 = new GraphAccordion('.accordion-1', {
+	        speed: 500
+        });
+
+        const accordion2 = new GraphAccordion('.accordion-2', {
+	        speed: 500
+        });
+
+        const accordion3 = new GraphAccordion('.accordion-3', {
+	        speed: 500
+        });
+
+        const accordion4 = new GraphAccordion('.accordion-4', {
+	        speed: 500
+        });
+    </script> -->
+
+</body>
+</html>

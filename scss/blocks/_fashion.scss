@@ -1,0 +1,97 @@
+.fashion {
+    padding-top: 100px;
+    position: relative;
+    &__title {
+        font-size: 20px;
+        font-weight: 400;
+        @include dark;
+        letter-spacing: 0.1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__wrap {
+        margin-top: 25px;
+        position: relative;
+        margin-left: 65px;
+        margin-right: 65px;
+        .swiper-container2 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            .fashion__wrap__inner__content__item {
+                width: 23.5% !important;
+                height: auto;
+                &__photo {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+                &__info {
+                    position: relative;
+                    margin-top: 15px;
+                    &__title {
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        @include dark;
+                        font-weight: 400;
+                        letter-spacing: 0.1em;
+                    }
+                    &__price {
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        @include dark;
+                        font-weight: 400;
+                        letter-spacing: 0.1em;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+        &__next-btn{
+            position: absolute;
+            top: 40%;
+            right: -65px;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        &__prev-btn{
+            position: absolute;
+            left: -65px;
+            top: 40%;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+.fashion-pagination {
+    position: relative !important;
+    display: none;
+    margin-top: 20px;
+    bottom: 0 !important;
+    overflow: hidden !important;
+    transition: 0.3s ease-in;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ededed;
+    width: 8px;
+    height: 8px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    border-radius: 10px !important;
+    transition: 0.3s ease-in;
+}

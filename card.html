@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istina</title>
+
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
+    <link rel="apple-touch-icon" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__wrap__left">
+                    <div class="header__wrap__left__hamburger">
+                        <span class="header__wrap__left__hamburger__span"></span>
+                        <span class="header__wrap__left__hamburger__span"></span>
+                        <span class="header__wrap__left__hamburger__span"></span>
+                    </div>
+                    <a href="index.html" class="header__wrap__left__logo"></a>
+                </div>
+                <div class="header__wrap__right">
+                    <div class="header__wrap__right__search">
+                        <form action="search.html" method="post" class="header__wrap__right__search__form" id="searchFormInput">
+                            <div class="header__wrap__right__search__form__inner">
+                                <input type="text" placeholder="ПОИСК" class="header__wrap__right__search__form__inner__input">
+                                <img src="icons/close.svg" alt="close" class="header__wrap__right__search__form__inner__close" onclick="searchIconClose()">
+                            </div>
+                        </form>
+                        <img src="icons/search.svg" alt="search" class="header__wrap__right__search__icon" onclick="searchIcon()">
+                    </div>
+                    <a href="#" class="header__wrap__right__account">
+                        <img src="icons/account.svg" alt="account" class="header__wrap__right__account__icon">
+                    </a>
+                    <a href="favorites.html" class="header__wrap__right__favorite">
+                        <img src="icons/heart.svg" alt="favorite" class="header__wrap__right__favorite__icon">
+                        <div class="header__wrap__right__favorite__count">
+                            <span class="header__wrap__right__favorite__count__number">2</span>
+                        </div>
+                    </a>
+                    <a href="cart.html" class="header__wrap__right__cart">
+                        <img src="icons/cart.svg" alt="" class="header__wrap__right__cart__icon">
+                        <div class="header__wrap__right__cart__count">
+                            <span class="header__wrap__right__cart__count__number">2</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="card">
+        <div class="container">
+            <p class="card__way">Одежда / верхняя одежда</p>
+            <div class="card__wrap">
+                <div class="card__wrap__gallery">
+                    <div class="card__wrap__gallery__inner swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card__gallery__slide">
+                                <a href="images/products/item-1.webp" class="card__gallery__slide__photo glightbox" data-gallery="gallery-auto">
+                                    <img class="card__gallery__slide__photo__main" alt="car" src="images/products/item-1.webp"/>
+                                </a>
+                            </div>
+                            <div class="swiper-slide card__gallery__slide">
+                                <a href="images/products/item-1-2.webp" class="card__gallery__slide__photo glightbox" data-gallery="gallery-auto">
+                                    <img class="card__gallery__slide__photo__main" alt="car" src="images/products/item-1-2.webp"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next card-swiper-btn-next">
+                            <svg class="card-swiper-btn-next-icon">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev card-swiper-btn-prev">
+                            <svg class="card-swiper-btn-prev-icon">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div thumbsSlider="" class="card__wrap__gallery__bar swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card__wrap__gallery__bar__inner">
+                                <img class="card__wrap__gallery__bar__inner__photo" alt="photo" src="images/products/item-1.webp"/>
+                            </div>
+                            <div class="swiper-slide card__wrap__gallery__bar__inner">
+                                <img class="card__wrap__gallery__bar__inner__photo" alt="photo" src="images/products/item-1-2.webp"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__wrap__info">
+                    <span class="card__wrap__info__vendor">арт. PE22/LC01/60-15/S</span>
+                    <h2 class="card__wrap__info__title">Жакет «MEN’S»</h2>
+                    <div class="card__wrap__info__price">15 000 ₽</div>
+                    <div class="card__wrap__info__size">
+                        <div class="card__wrap__info__size__res">Размер: <span>S</span></div>
+                        <form class="card__wrap__info__size__btns">
+                            <div class="card__wrap__info__size__btns__item">
+                                <input id="radio-size-one" name="size" checked type="radio" class="card__wrap__info__size__btns__item__radio">
+                                <label for="radio-size-one" class="card__wrap__info__size__btns__item__name">S</label>
+                            </div>
+                            
+                            <div class="card__wrap__info__size__btns__item">
+                                <input id="radio-size-second" name="size" type="radio" class="card__wrap__info__size__btns__item__radio">
+                                <label for="radio-size-second" class="card__wrap__info__size__btns__item__name">M</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card__wrap__info__btns">
+                        <button class="card__wrap__info__btns__buy">В корзину</button>
+
+                        <div class="card__wrap__info__btns__favorite">
+                            <input id="heart-item" type="checkbox" class="card__wrap__info__btns__favorite__input">
+                            <label for="heart-item" class="card__wrap__info__btns__favorite__label"></label>
+                        </div> 
+                    </div>
+                    <ul class="card__wrap__info__data">
+                        <li class="card__wrap__info__data__item">
+                            <div class="accordion-2 card__wrap__info__data__item__accordion">
+                                <button class="card__wrap__info__data__item__accordion__control accordion__control" aria-expanded="false">
+                                    <span class="card__wrap__info__data__item__accordion__control__title">Описание</span>
+                                    <img src="icons/arrow-down.svg" alt="arrow down" class="card__wrap__info__data__item__accordion__control__icon">
+                                </button>
+                                <div class="card__wrap__info__data__item__accordion__content accordion__content">
+                                    <ul class="card__wrap__info__data__item__accordion__content__list">
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Жакет oversized с широкими плечами</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Цвет: платина</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Состав костюмной ткани: 70% шерсть, 30% полиэстер</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Состав подкладочной ткани: 50% вискоза, 50% полиэстер</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Параметры модели:</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card__wrap__info__data__item">
+                            <div class="accordion-6 card__wrap__info__data__item__accordion">
+                                <button class="card__wrap__info__data__item__accordion__control accordion__control" aria-expanded="false">
+                                    <span class="card__wrap__info__data__item__accordion__control__title">уход</span>
+                                    <img src="icons/arrow-down.svg" alt="arrow down" class="card__wrap__info__data__item__accordion__control__icon">
+                                </button>
+                                
+                                <div class="card__wrap__info__data__item__accordion__content accordion__content">
+                                    <ul class="card__wrap__info__data__item__accordion__content__list">
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Жакет oversized с широкими плечами</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Цвет: платина</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Состав костюмной ткани: 70% шерсть, 30% полиэстер</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Состав подкладочной ткани: 50% вискоза, 50% полиэстер</li>
+                                        <li class="card__wrap__info__data__item__accordion__content__list__item">Параметры модели:</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fashion">
+        <div class="container">
+            <h2 class="fashion__title">Дополнить образ</h2>
+            <div class="fashion__wrap">
+                <div class="fashion__wrap__inner swiper-container2">
+                    <div class="fashion__wrap__inner__content swiper-wrapper">
+                        <a href="#" class="fashion__wrap__inner__content__item swiper-slide">
+                            <img src="images/products/item-2.webp" alt="photo" class="fashion__wrap__inner__content__item__photo">
+                            <div class="fashion__wrap__inner__content__item__info">
+                                <h3 class="fashion__wrap__inner__content__item__info__title">брюки «MEN’S» 1</h3>
+                                <p class="fashion__wrap__inner__content__item__info__price">9000 ₽</p>
+                            </div>
+                        </a>
+                        <a href="#" class="fashion__wrap__inner__content__item swiper-slide">
+                            <img src="images/products/item-2.webp" alt="photo" class="fashion__wrap__inner__content__item__photo">
+                            <div class="fashion__wrap__inner__content__item__info">
+                                <h3 class="fashion__wrap__inner__content__item__info__title">брюки «MEN’S» 2</h3>
+                                <p class="fashion__wrap__inner__content__item__info__price">9000 ₽</p>
+                            </div>
+                        </a>
+                        <a href="#" class="fashion__wrap__inner__content__item swiper-slide">
+                            <img src="images/products/item-2.webp" alt="photo" class="fashion__wrap__inner__content__item__photo">
+                            <div class="fashion__wrap__inner__content__item__info">
+                                <h3 class="fashion__wrap__inner__content__item__info__title">брюки «MEN’S» 3</h3>
+                                <p class="fashion__wrap__inner__content__item__info__price">9000 ₽</p>
+                            </div>
+                        </a>
+                        <a href="#" class="fashion__wrap__inner__content__item swiper-slide">
+                            <img src="images/products/item-2.webp" alt="photo" class="fashion__wrap__inner__content__item__photo">
+                            <div class="fashion__wrap__inner__content__item__info">
+                                <h3 class="fashion__wrap__inner__content__item__info__title">брюки «MEN’S» 4</h3>
+                                <p class="fashion__wrap__inner__content__item__info__price">9000 ₽</p>
+                            </div>
+                        </a>
+                        <a href="#" class="fashion__wrap__inner__content__item swiper-slide">
+                            <img src="images/products/item-2.webp" alt="photo" class="fashion__wrap__inner__content__item__photo">
+                            <div class="fashion__wrap__inner__content__item__info">
+                                <h3 class="fashion__wrap__inner__content__item__info__title">брюки «MEN’S» 5</h3>
+                                <p class="fashion__wrap__inner__content__item__info__price">9000 ₽</p>
+                            </div>
+                        </a>
+                        <a href="#" class="fashion__wrap__inner__content__item swiper-slide">
+                            <img src="images/products/item-2.webp" alt="photo" class="fashion__wrap__inner__content__item__photo">
+                            <div class="fashion__wrap__inner__content__item__info">
+                                <h3 class="fashion__wrap__inner__content__item__info__title">брюки «MEN’S» 6</h3>
+                                <p class="fashion__wrap__inner__content__item__info__price">9000 ₽</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination fashion-pagination"></div>
+                <div class="next-slider3 fashion__wrap__next-btn">
+                    <img src="icons/arrow-right-2.svg" alt="icon" class="fashion__wrap__next-btn__icon">
+                </div>
+                <div class="prev-slider3 fashion__wrap__prev-btn">
+                    <img src="icons/arrow-left-2.svg" alt="icon" class="fashion__wrap__prev-btn__icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <h5 class="footer__wrap__title footer__wrap__title-other">
+                    СЛЕДИТЕ ЗА НАМИ
+                </h5>
+                <div class="footer__wrap__social footer__wrap__social-other">
+                    <a href="#" target="_blank" class="footer__wrap__social__link">telegram</a>
+                    <a href="#" target="_blank" class="footer__wrap__social__link">vk</a>
+                    <a href="#" target="_blank" class="footer__wrap__social__link">pinterest</a>
+                </div>
+                <div class="footer__wrap__content footer__wrap__content-other">
+                    <a href="#" target="_blank" class="footer__wrap__content__link">контакты</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">подарочная карта</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">УСЛОВИЯ ПОКУПКИ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Menu -->
+    <div class="bg-menu"></div>
+
+    <div class="menu ">
+        <div class="menu__inner">
+            <div class="menu__inner__close">
+                <img src="icons/close.svg" alt="close" class="menu__inner__close__icon">
+            </div>
+            <div class="menu__inner__mob-nav">
+                <form action="search.html" method="post" class="menu__inner__mob-nav__search__form" id="searchFormInputMob">
+                    <div class="menu__inner__mob-nav__search__form__inner">
+                        <input type="text" placeholder="ПОИСК" class="menu__inner__mob-nav__search__form__inner__input">
+                        <img src="icons/close.svg" alt="close" class="menu__inner__mob-nav__search__form__inner__close" onclick="searchIconCloseMob()">
+                    </div>
+                </form>
+                <div class="menu__inner__mob-nav__search">
+                    <img src="icons/search.svg" alt="search" class="menu__inner__mob-nav__search__icon" onclick="searchIconMob()">
+                </div>
+                <a href="#" class="menu__inner__mob-nav__account">
+                    <img src="icons/account.svg" alt="account" class="menu__inner__mob-nav__account__icon">
+                </a>
+            </div>
+            <h5 class="menu__inner__title">Каталог</h5>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item menu__inner__nav__item-exception">
+                    <a href="news.html" class="menu__inner__nav__item__link">Новинки</a>
+                </li>
+                <li class="menu__inner__nav__item">
+                    <div class="accordion-1 accordion">
+                        <button class="menu__accordion__control accordion__control" aria-expanded="false">
+                            <span class="menu__accordion__control__title">Одежда</span>
+                            <img src="icons/arrow-down.svg" alt="arrow down" class="menu__accordion__control__icon">
+                        </button>
+                        <div class="menu__accordion__content accordion__content" aria-hidden="true">
+                            <ul class="menu__accordion__content__list">
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="products.html" class="menu__accordion__content__list__item__link">СМОТРЕТЬ ВСЁ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ВЕРХНЯЯ ОДЕЖДА</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ЖАКЕТЫ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">БРЮКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТОПЫ И ФУТБОЛКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТРИКОТАЖ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">РУБАШКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТОЛСТОВКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ПЛАТЬЯ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <svg display="none">
+        <symbol id="heart" viewBox="0 0 21 18">
+            <g>
+                <path d="M10.7872 18C10.4991 18 10.2214 17.8957 10.005 17.7061C9.18769 16.9914 8.3997 16.3198 7.70447 15.7274L7.70092 15.7243C5.66262 13.9873 3.90247 12.4873 2.6778 11.0096C1.3088 9.35765 0.671143 7.79138 0.671143 6.08032C0.671143 4.41788 1.24119 2.88418 2.27616 1.76153C3.32348 0.625613 4.76055 0 6.32312 0C7.49099 0 8.56054 0.369224 9.50197 1.09733C9.97708 1.46486 10.4077 1.91466 10.7872 2.43932C11.1667 1.91466 11.5972 1.46486 12.0725 1.09733C13.0139 0.369224 14.0835 0 15.2513 0C16.8138 0 18.251 0.625613 19.2983 1.76153C20.3333 2.88418 20.9032 4.41788 20.9032 6.08032C20.9032 7.79138 20.2657 9.35765 18.8967 11.0094C17.672 12.4873 15.912 13.9872 13.874 15.724C13.1775 16.3173 12.3883 16.99 11.5691 17.7064C11.3529 17.8957 11.075 18 10.7872 18ZM6.32312 1.18516C5.09551 1.18516 3.96777 1.67509 3.14735 2.56481C2.31475 3.46796 1.85615 4.71641 1.85615 6.08032C1.85615 7.5194 2.391 8.80644 3.59021 10.2534C4.74928 11.652 6.47331 13.1212 8.46947 14.8224L8.47317 14.8255C9.17102 15.4202 9.96211 16.0944 10.7855 16.8144C11.6137 16.0931 12.4061 15.4177 13.1053 14.8221C15.1013 13.1209 16.8252 11.652 17.9842 10.2534C19.1833 8.80644 19.7182 7.5194 19.7182 6.08032C19.7182 4.71641 19.2596 3.46796 18.4269 2.56481C17.6067 1.67509 16.4788 1.18516 15.2513 1.18516C14.3521 1.18516 13.5264 1.47103 12.7974 2.03475C12.1477 2.53734 11.6951 3.17268 11.4297 3.61723C11.2933 3.84583 11.0531 3.98228 10.7872 3.98228C10.5212 3.98228 10.281 3.84583 10.1446 3.61723C9.87937 3.17268 9.42679 2.53734 8.77695 2.03475C8.04791 1.47103 7.22225 1.18516 6.32312 1.18516Z"/>
+            </g>
+        </symbol>
+        <symbol id="heart-2" viewBox="0 0 24 24">
+            <g>
+                <path d="M2 8.4C1.99988 7.68237 2.1428 6.97191 2.4204 6.31015C2.69801 5.64838 3.10474 5.04859 3.61681 4.54583C4.12889 4.04306 4.73604 3.64741 5.40279 3.38199C6.06953 3.11657 6.78249 2.98671 7.5 3C8.34896 2.99549 9.18919 3.17147 9.96499 3.51627C10.7408 3.86107 11.4345 4.36682 12 5C12.5655 4.36682 13.2592 3.86107 14.035 3.51627C14.8108 3.17147 15.651 2.99549 16.5 3C17.2175 2.98671 17.9305 3.11657 18.5972 3.38199C19.264 3.64741 19.8711 4.04306 20.3832 4.54583C20.8953 5.04859 21.302 5.64838 21.5796 6.31015C21.8572 6.97191 22.0001 7.68237 22 8.4C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.4Z"/>
+            </g>
+        </symbol>
+        <symbol id="arrow-down" viewBox="0 0 10 6">
+            <g>
+                <path d="M5.00002 6.00001C4.88377 6.00001 4.76741 5.95557 4.67866 5.86683L0.13321 1.32138C-0.0444033 1.14376 -0.0444033 0.85615 0.13321 0.678651C0.310823 0.501151 0.598436 0.501037 0.775936 0.678651L5.00002 4.90274L9.22411 0.678651C9.40172 0.501037 9.68933 0.501037 9.86683 0.678651C10.0443 0.856264 10.0444 1.14388 9.86683 1.32138L5.32138 5.86683C5.23263 5.95557 5.11627 6.00001 5.00002 6.00001Z"/>
+            </g>
+        </symbol>
+    </svg>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/accordion.js"></script>
+
+    <!-- <script>
+        const accordion1 = new GraphAccordion('.accordion-1', {
+	        speed: 500
+        });
+
+        const accordion2 = new GraphAccordion('.accordion-2', {
+	        speed: 500
+        });
+
+        const accordion3 = new GraphAccordion('.accordion-3', {
+	        speed: 500
+        });
+
+        const accordion4 = new GraphAccordion('.accordion-4', {
+	        speed: 500
+        });
+
+        const accordion5 = new GraphAccordion('.accordion-5', {
+	        speed: 500
+        });
+
+        const accordion6 = new GraphAccordion('.accordion-6', {
+	        speed: 500
+        });
+
+        const accordion7 = new GraphAccordion('.accordion-7', {
+	        speed: 500
+        });
+    </script> -->
+
+    <script>
+        // Glightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+
+</body>
+</html>

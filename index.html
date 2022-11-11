@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istina</title>
+
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
+    <link rel="apple-touch-icon" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__wrap__left">
+                    <div class="header__wrap__left__hamburger">
+                        <span class="header__wrap__left__hamburger__span"></span>
+                        <span class="header__wrap__left__hamburger__span"></span>
+                        <span class="header__wrap__left__hamburger__span"></span>
+                    </div>
+                    <a href="index.html" class="header__wrap__left__logo"></a>
+                </div>
+                <div class="header__wrap__right">
+                    <div class="header__wrap__right__search">
+                        <form action="search.html" method="post" class="header__wrap__right__search__form" id="searchFormInput">
+                            <div class="header__wrap__right__search__form__inner">
+                                <input type="text" placeholder="ПОИСК" class="header__wrap__right__search__form__inner__input">
+                                <img src="icons/close.svg" alt="close" class="header__wrap__right__search__form__inner__close" onclick="searchIconClose()">
+                            </div>
+                        </form>
+                        <img src="icons/search.svg" alt="search" class="header__wrap__right__search__icon" onclick="searchIcon()">
+                    </div>
+                    <a href="#" class="header__wrap__right__account">
+                        <img src="icons/account.svg" alt="account" class="header__wrap__right__account__icon">
+                    </a>
+                    <a href="favorites.html" class="header__wrap__right__favorite">
+                        <img src="icons/heart.svg" alt="favorite" class="header__wrap__right__favorite__icon">
+                        <div class="header__wrap__right__favorite__count">
+                            <span class="header__wrap__right__favorite__count__number">2</span>
+                        </div>
+                    </a>
+                    <a href="cart.html" class="header__wrap__right__cart">
+                        <img src="icons/cart.svg" alt="" class="header__wrap__right__cart__icon">
+                        <div class="header__wrap__right__cart__count">
+                            <span class="header__wrap__right__cart__count__number">2</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="promo">
+        <div class="promo__wrap swiper-container">
+            <div class="promo__wrap__inner swiper-wrapper">
+                <div class="promo__wrap__inner__slide swiper-slide">
+                    <img src="images/main-photo-1.webp" alt="photo" class="promo__wrap__inner__slide__photo photo-main-1">
+                    <img src="images/main-photo-1-mob.webp" alt="photo" class="promo__wrap__inner__slide__photo-mob">
+                    <div class="promo__wrap__inner__slide__content">
+                        <div class="promo__wrap__inner__slide__content__title">
+                            <h2 class="promo__wrap__inner__slide__content__title__text">Classic</h2>
+                        </div>
+                        <div class="promo__wrap__inner__slide__content__subtitle">
+                            <p class="promo__wrap__inner__slide__content__subtitle__text">Clothes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__wrap__inner__slide swiper-slide">
+                    <img src="images/main-photo-2.jpg" alt="photo" class="promo__wrap__inner__slide__photo photo-main-2">
+                    <div class="promo__wrap__inner__slide__content">
+                        <div class="promo__wrap__inner__slide__content__title">
+                            <h2 class="promo__wrap__inner__slide__content__title__text">Famous</h2>
+                        </div>
+                        <div class="promo__wrap__inner__slide__content__subtitle">
+                            <p class="promo__wrap__inner__slide__content__subtitle__text">edition</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="promo-main">
+                <div class="promo__control">
+                    <div class="swiper-pagination1 promo__control__pagination"></div>
+    
+                    <div class="promo__control__navigation">
+                        <div class="swiper-button-prev prev-slider1">
+                            <img src="icons/arrow-left.svg" alt="icon" class="promo__control__navigation__prev">
+                        </div>
+                        <div class="swiper-button-next next-slider1">
+                            <img src="icons/arrow-right.svg" alt="icon" class="promo__control__navigation__next">
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <h5 class="footer__wrap__title">
+                    СЛЕДИТЕ ЗА НАМИ
+                </h5>
+                <div class="footer__wrap__social">
+                    <a href="#" target="_blank" class="footer__wrap__social__link">telegram</a>
+                    <a href="#" target="_blank" class="footer__wrap__social__link">vk</a>
+                    <a href="#" target="_blank" class="footer__wrap__social__link">pinterest</a>
+                </div>
+                <div class="footer__wrap__content">
+                    <a href="#" target="_blank" class="footer__wrap__content__link">контакты</a>
+                    <div class="footer__wrap__content__divider">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">подарочная карта</a>
+                    <div class="footer__wrap__content__divider">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <div class="footer__wrap__content__divider third-divider-footer">|</div>
+                    <a href="#" target="_blank" class="footer__wrap__content__link">УСЛОВИЯ ПОКУПКИ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Menu -->
+    <div class="bg-menu"></div>
+
+    <div class="menu ">
+        <div class="menu__inner">
+            <div class="menu__inner__close">
+                <img src="icons/close.svg" alt="close" class="menu__inner__close__icon">
+            </div>
+            <div class="menu__inner__mob-nav">
+                <form action="search.html" method="post" class="menu__inner__mob-nav__search__form" id="searchFormInputMob">
+                    <div class="menu__inner__mob-nav__search__form__inner">
+                        <input type="text" placeholder="ПОИСК" class="menu__inner__mob-nav__search__form__inner__input">
+                        <img src="icons/close.svg" alt="close" class="menu__inner__mob-nav__search__form__inner__close" onclick="searchIconCloseMob()">
+                    </div>
+                </form>
+                <div class="menu__inner__mob-nav__search">
+                    <img src="icons/search.svg" alt="search" class="menu__inner__mob-nav__search__icon" onclick="searchIconMob()">
+                </div>
+                <a href="#" class="menu__inner__mob-nav__account">
+                    <img src="icons/account.svg" alt="account" class="menu__inner__mob-nav__account__icon">
+                </a>
+            </div>
+            <h5 class="menu__inner__title">Каталог</h5>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item menu__inner__nav__item-exception">
+                    <a href="news.html" class="menu__inner__nav__item__link">Новинки</a>
+                </li>
+                <li class="menu__inner__nav__item">
+                    <div class="accordion-1 accordion">
+                        <button class="menu__accordion__control accordion__control" aria-expanded="false">
+                            <span class="menu__accordion__control__title">Одежда</span>
+                            <img src="icons/arrow-down.svg" alt="arrow down" class="menu__accordion__control__icon">
+                        </button>
+                        <div class="menu__accordion__content accordion__content" aria-hidden="true">
+                            <ul class="menu__accordion__content__list">
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="products.html" class="menu__accordion__content__list__item__link">СМОТРЕТЬ ВСЁ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ВЕРХНЯЯ ОДЕЖДА</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ЖАКЕТЫ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">БРЮКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТОПЫ И ФУТБОЛКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТРИКОТАЖ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">РУБАШКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ТОЛСТОВКИ</a>
+                                </li>
+                                <li class="menu__accordion__content__list__item">
+                                    <a href="#" class="menu__accordion__content__list__item__link">ПЛАТЬЯ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/accordion.js"></script>
+
+    <!-- <script>
+        const accordion1 = new GraphAccordion('.accordion-1', {
+	        speed: 500
+        });
+    </script> -->
+
+</body>
+</html>
