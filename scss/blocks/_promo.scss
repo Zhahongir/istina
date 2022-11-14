@@ -1,9 +1,9 @@
 .promo {
     position: relative;
-    padding-top: 0px;
+    padding-top: 80px;
     .prev-slider1 {
         position: absolute;
-        top: 50%;
+        top: 52%;
         transform: translateY(-50%);
         left: 30px;
         display: flex;
@@ -27,7 +27,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 50%;
+        top: 52%;
         transform: translateY(-50%);
         right: 30px;
         transition: 0.3s ease;
@@ -72,7 +72,7 @@
                     transition: 1s ease-in;
                 }
                 &__content {
-                    margin-top: 40vh;
+                    margin-top: 35vh;
                     padding-right: 100px;
                     margin-right: auto;
                     &__title {

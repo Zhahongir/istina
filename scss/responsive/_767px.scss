@@ -1,6 +1,7 @@
 @media screen and (max-width: 767px) {
     .promo {
         // padding-top: 54px;
+        padding-top: 0;
     }
     .promo__wrap {
         // height: 375px;
@@ -9,6 +10,31 @@
 
     .promo__wrap__inner__slide__photo {
         // height: 375px;
+        height: 100vh;
+    }
+
+    .promo__wrap__inner__slide__content {
+        display: none;
+    }
+
+    .photo-main-1 {
+        display: none;
+    }
+
+    .photo-main-2 {
+        display: none;
+    }
+
+    .photo-main-3 {
+        display: none;
+    }
+
+    .photo-main-desktop {
+        display: none;
+    }
+
+    .promo__wrap__inner__slide__photo-mob {
+        display: block;
         height: 100vh;
     }
 
