@@ -1,16 +1,59 @@
 .promo {
     position: relative;
-    padding-top: 61px;
+    padding-top: 0px;
+    .prev-slider1 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease;
+        .promo__control__navigation__icon-left {
+            width: 27px;
+            transform: rotate(90deg);
+            height: 27px;
+            fill: #fff;
+            opacity: 0.8;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .next-slider1 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        transition: 0.3s ease;
+        .promo__control__navigation__icon-right {
+            width: 27px;
+            height: 27px;
+            fill: #fff;
+            opacity: 0.8;
+            transform: rotate(-90deg);
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
     &__wrap {
         width: 100%;
         overflow: hidden;
         height: 100vh;
         &__inner {
+            transition: 0.8s ease-in !important;
             &__slide {
                 width: 100%;
                 position: relative;
-                height: 850px !important;
-                transition: 1s ease-in;
+                height: 100vh !important;
+                transition: 0.5s ease-in !important;
                 &__photo {
                     width: 100%;
                     object-fit: cover;
@@ -29,8 +72,8 @@
                     transition: 1s ease-in;
                 }
                 &__content {
-                    margin-top: 35vh;
-                    padding-right: 50px;
+                    margin-top: 40vh;
+                    padding-right: 100px;
                     margin-right: auto;
                     &__title {
                         overflow: hidden;
@@ -82,42 +125,6 @@
                 font-weight: 300;
                 position: relative;
                 transition: 1s ease-in;
-            }
-            &__navigation {
-                display: flex;
-                align-items: center;
-                position: relative;
-                .prev-slider1 {
-                    position: relative;
-                    width: 55px;
-                    height: 55px;
-                    border-radius: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid #fff;
-                    margin-right: 25px;
-                    transition: 0.3s ease;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-                .next-slider1 {
-                    position: relative;
-                    position: relative;
-                    width: 55px;
-                    height: 55px;
-                    border-radius: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid #fff;
-                    margin-left: 25px;
-                    transition: 0.3s ease;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
             }
         }
     }

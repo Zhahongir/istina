@@ -24,12 +24,22 @@
         right: 25px;
     }
 
+    .promo {
+        padding-top: 0;
+        height: 100vh;
+    }
+
     .promo__wrap {
-        height: 500px;
+        height: 100vh;
     }
 
     .promo__wrap__inner__slide__photo {
-        height: 500px;
+        // height: 500px;
+        height: 100vh;
+    }
+
+    .promo__wrap__inner {
+        transition: 0.5s ease-in !important;
     }
 
     .header__wrap__right__search__icon {
@@ -100,6 +110,7 @@
 
     .promo__wrap__inner__slide__content  {
         margin-top: 200px;
+        display: none;
     }
 
     .footer {
@@ -114,8 +125,39 @@
         display: none;
     }
 
+    .photo-main-2 {
+        display: none;
+    }
+
+    .photo-main-3 {
+        display: none;
+    }
+
+    .photo-main-desktop {
+        display: none;
+    }
+
+    .promo .next-slider1 .promo__control__navigation__icon-right {
+        width: 20px;
+        height: 20px;
+    }
+
+    .promo .prev-slider1 .promo__control__navigation__icon-left {
+        width: 20px;
+        height: 20px;
+    }
+
+    .promo .prev-slider1 {
+        left: 0px;
+    }
+
+    .promo .next-slider1 {
+        right: 0px;
+    }
+
     .promo__wrap__inner__slide__photo-mob {
         display: block;
+        height: 100vh;
     }
 
     .filter {
@@ -239,12 +281,35 @@
         font-size: 15px;
     }
 
+    .header__wrap__right__favorite__count {
+        width: 18px;
+        height: 18px;
+    }
+
+    .header__wrap__right__cart__count {
+        width: 18px;
+        height: 18px;
+        top: -1px;
+    }
+
     .header__wrap__right__favorite__count__number {
         margin-top: 2px;
+        font-size: 10px;
     }
 
     .header__wrap__right__cart__count__number {
         margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .header__wrap__right__cart__icon {
+        width: 19px;
+        height: 19px;
+    }
+
+    .header__wrap__right__favorite__icon {
+        width: 18px;
+        height: auto;
     }
 
     .fashion-pagination {
@@ -285,20 +350,22 @@
     }
 
     .cart__wrap__inner__item__left__info__action__favorites__icon {
-        width: 22px;
-        height: 22px;
+        width: 16px;
+        height: 16px;
     }
 
     .cart__wrap__inner__item__left__info__action__favorites__text {
         font-size: 13px;
+        margin-top: 2px;
     }
 
     .cart__wrap__inner__item__left__info__action__delete__icon {
-        width: 15px;
+        height: 14px;
     }
     
     .cart__wrap__inner__item__left__info__action__delete__text {
         font-size: 13px;
+        margin-top: 2px;
     }
 
     .cart__wrap__inner__item__left__info__action__favorites {

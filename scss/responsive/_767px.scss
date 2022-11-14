@@ -1,15 +1,20 @@
 @media screen and (max-width: 767px) {
+    .promo {
+        // padding-top: 54px;
+    }
     .promo__wrap {
-        height: 375px;
+        // height: 375px;
+        height: 100vh;
     }
 
     .promo__wrap__inner__slide__photo {
-        height: 375px;
+        // height: 375px;
+        height: 100vh;
     }
 
     .promo__wrap__inner__slide__content {
-        margin-top: 150px;
-        padding-right: 25px;
+        margin-top: 40vh;
+        padding-right: 70px;
     }
 
     .promo__wrap__inner__slide__content__title__text {
@@ -32,6 +37,11 @@
         font-size: 20px;
     }
 
+    .header__wrap__left__logo {
+        width: 120px;
+        height: 30px;
+    }
+
     .promo-main .promo__control__navigation .prev-slider1 {
         width: 40px;
         height: 40px;
@@ -40,6 +50,14 @@
     .promo-main .promo__control__navigation .next-slider1 {
         width: 40px;
         height: 40px;
+    }
+
+    .promo .prev-slider1 {
+        left: 15px;
+    }
+
+    .promo .next-slider1 {
+        right: 15px;
     }
 
     .footer__wrap__title {
@@ -80,7 +98,7 @@
     }
 
     .header__wrap__right__search__form__inner__input {
-        width: 350px;
+        width: 350px !important;
     }
 
     .products__wrap {
@@ -245,4 +263,5 @@
     .cart__wrap__inner__total {
         margin-top: 20px;
     }
+
 }

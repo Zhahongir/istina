@@ -63,8 +63,8 @@
         <div class="promo__wrap swiper-container">
             <div class="promo__wrap__inner swiper-wrapper">
                 <div class="promo__wrap__inner__slide swiper-slide">
-                    <img src="images/main-photo-1.webp" alt="photo" class="promo__wrap__inner__slide__photo photo-main-1">
-                    <img src="images/main-photo-1-mob.webp" alt="photo" class="promo__wrap__inner__slide__photo-mob">
+                    <img src="images/main-photo-1.webp" alt="photo" class="promo__wrap__inner__slide__photo photo-main-1 photo-main-desktop">
+                    <img src="images/main-photo-mob-1.jpg" alt="photo" class="promo__wrap__inner__slide__photo-mob">
                     <div class="promo__wrap__inner__slide__content">
                         <div class="promo__wrap__inner__slide__content__title">
                             <h2 class="promo__wrap__inner__slide__content__title__text">Classic</h2>
@@ -75,7 +75,20 @@
                     </div>
                 </div>
                 <div class="promo__wrap__inner__slide swiper-slide">
-                    <img src="images/main-photo-2.jpg" alt="photo" class="promo__wrap__inner__slide__photo photo-main-2">
+                    <img src="images/main-photo-2.jpg" alt="photo" class="promo__wrap__inner__slide__photo photo-main-3 photo-main-desktop">
+                    <img src="images/main-photo-mob-3.webp" alt="photo" class="promo__wrap__inner__slide__photo-mob">
+                    <div class="promo__wrap__inner__slide__content">
+                        <div class="promo__wrap__inner__slide__content__title">
+                            <h2 class="promo__wrap__inner__slide__content__title__text">Classic</h2>
+                        </div>
+                        <div class="promo__wrap__inner__slide__content__subtitle">
+                            <p class="promo__wrap__inner__slide__content__subtitle__text">Clothes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__wrap__inner__slide swiper-slide">
+                    <img src="images/main-photo-1.webp" alt="photo" class="promo__wrap__inner__slide__photo photo-main-2 photo-main-desktop">
+                    <img src="images/main-photo-mob-2.jpg" alt="photo" class="promo__wrap__inner__slide__photo-mob">
                     <div class="promo__wrap__inner__slide__content">
                         <div class="promo__wrap__inner__slide__content__title">
                             <h2 class="promo__wrap__inner__slide__content__title__text">Famous</h2>
@@ -90,19 +103,21 @@
         </div>
         <div class="container">
             <div class="promo-main">
-                <div class="promo__control">
+                <!-- <div class="promo__control">
                     <div class="swiper-pagination1 promo__control__pagination"></div>
-    
-                    <div class="promo__control__navigation">
-                        <div class="swiper-button-prev prev-slider1">
-                            <img src="icons/arrow-left.svg" alt="icon" class="promo__control__navigation__prev">
-                        </div>
-                        <div class="swiper-button-next next-slider1">
-                            <img src="icons/arrow-right.svg" alt="icon" class="promo__control__navigation__next">
-                        </div>
-                    </div>  
-                </div>
+                    <div class="promo__control__navigation"></div>
+                </div> -->
             </div>
+        </div>
+        <div class="swiper-button-prev prev-slider1">
+            <svg class="promo__control__navigation__icon-left">
+                <use xlink:href="#arrow-down"></use>
+            </svg>
+        </div>
+        <div class="swiper-button-next next-slider1">
+            <svg class="promo__control__navigation__icon-right">
+                <use xlink:href="#arrow-down"></use>
+            </svg>
         </div>
     </section>
 
@@ -200,6 +215,20 @@
             </ul>
         </div>
     </div>
+
+
+    <svg display="none">
+        <symbol id="arrow-slider" viewBox="0 0 512.002 512.002">
+            <g>
+                <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+            </g>
+        </symbol>
+        <symbol id="arrow-down" viewBox="0 0 10 6">
+            <g>
+                <path d="M5.00002 6.00001C4.88377 6.00001 4.76741 5.95557 4.67866 5.86683L0.13321 1.32138C-0.0444033 1.14376 -0.0444033 0.85615 0.13321 0.678651C0.310823 0.501151 0.598436 0.501037 0.775936 0.678651L5.00002 4.90274L9.22411 0.678651C9.40172 0.501037 9.68933 0.501037 9.86683 0.678651C10.0443 0.856264 10.0444 1.14388 9.86683 1.32138L5.32138 5.86683C5.23263 5.95557 5.11627 6.00001 5.00002 6.00001Z"/>
+            </g>
+        </symbol>
+    </svg>
     
 
 
@@ -210,11 +239,6 @@
     <script src="js/script.js"></script>
     <script src="js/accordion.js"></script>
 
-    <!-- <script>
-        const accordion1 = new GraphAccordion('.accordion-1', {
-	        speed: 500
-        });
-    </script> -->
 
 </body>
 </html>

@@ -129,7 +129,6 @@
                 &__favorite {
                     width: 40px;
                     height: 40px;
-                    background-color: #F2F2F2;
                     position: absolute;
                     border-radius: 10px;
                     top: 10px;
@@ -155,7 +154,7 @@
                         background-position: center;
                         vertical-align: middle;
                         padding-left: 0px;
-                        margin-right: -40px;
+                        margin-right: -50px;
                         transition: 0.2s ease;
                         cursor: pointer;
                     }

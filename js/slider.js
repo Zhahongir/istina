@@ -14,7 +14,7 @@ const swiper1 = new Swiper('.swiper-container', {
         delay: 5000,
         disableOnInteraction: false,
     },
-    effect: "fade",
+    effect: "slide",
     allowTouchMove: false,
     navigation: {
         nextEl: '.next-slider1',

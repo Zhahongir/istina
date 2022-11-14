@@ -5,15 +5,19 @@
     }
 
     .promo__wrap {
-        height: 500px;
+        height: 100vh;
     }
 
     .promo__wrap__inner__slide__photo {
-        height: 500px;
+        height: 100vh;
     }
 
     .promo-main .promo__control {
         bottom: 20px;
+    }
+
+    .promo__wrap__inner__slide__content {
+        margin-top: 40vh;
     }
 
     .promo__wrap__inner__slide__content__title__text {
@@ -50,7 +54,7 @@
     }
 
     .header__wrap__right__search__form__inner__input {
-        width: 330px;
+        width: 300px !important;
     }
 
     .footer__wrap__social__link {
