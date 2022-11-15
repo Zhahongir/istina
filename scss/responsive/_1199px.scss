@@ -52,6 +52,18 @@
         margin-top: 44px;
     }
 
+    .delivery__wrap__contacts {
+        width: 50%;
+    }
+
+    .delivery__wrap__products {
+        width: 50%;
+    }
+
+    .delivery__wrap {
+        justify-content: space-between;
+    }
+
 }
 
 @media screen and (max-width: 1440px) {

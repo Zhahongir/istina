@@ -1,17 +1,55 @@
 .delivery {
     position: relative;
     padding-top: 140px;
+    &__title-mob {
+        font-size: 24px;
+        font-weight: 500;
+        @include dark;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: none;
+    }
     &__wrap {
         position: relative;
         display: flex;
+        justify-content: center;
         &__contacts {
             position: relative;
+            width: 45%;
+            padding-right: 2%;
+            border-right: 2px solid #EDEDED;
             &__title {
                 font-size: 24px;
                 font-weight: 500;
                 @include dark;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
+            }
+            &__cabinet {
+                position: relative;
+                width: 100%;
+                &__title {
+                    font-size: 24px;
+                    font-weight: 500;
+                    @include dark;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                &__btn {
+                    @include dark-bg;
+                    width: 100%;
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    text-align: center;
+                    padding: 12px 60px 12px 60px;
+                    display: flex;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
             }
             &__form {
                 position: relative;
@@ -21,6 +59,9 @@
                     font-weight: 500;
                     @include dark;
                     margin-top: 30px;
+                    span {
+                        color: red;
+                    }
                 }
                 &__item {
                     display: flex;
@@ -42,6 +83,314 @@
                         font-size: 16px;
                         font-weight: 400;
                         @include dark;
+                        [type='number'] {
+                            -moz-appearance: textfield;
+                        }
+                    }
+                    textarea {
+                        resize: none;
+                        min-height: 100px;
+                    }
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                    &__name {
+                        font-size: 16px;
+                        font-weight: 400;
+                        @include dark;
+                        span {
+                            color: red;
+                        }
+                    }
+                    &__select {
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 10px 15px 10px 15px;
+                        background-color: #fff;
+                        border: 1px solid #131313;
+                        font-size: 16px;
+                        font-weight: 400;
+                        @include dark;
+                        cursor: pointer;
+                    }
+                }
+                &__home {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    &__item {
+                        display: flex;
+                        flex-direction: column;
+                        width: 48%;
+                        &__label {
+                            font-size: 16px;
+                            font-weight: 400;
+                            @include dark;
+                            span {
+                                color: red;
+                            }
+                        }
+                        &__input {
+                            margin-top: 5px;
+                            padding: 10px 15px 10px 15px;
+                            background-color: #fff;
+                            border: 1px solid #131313;
+                            font-size: 16px;
+                            font-weight: 400;
+                            @include dark;
+                            [type='number'] {
+                                -moz-appearance: textfield;
+                            }
+                        }
+                    }
+                }
+                &__item-check {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+                    label {
+                        cursor: pointer;
+                        font-size: 17px;
+                        @include dark;
+                        font-weight: 400;
+                        transition: 0.3s ease;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                    label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #EDEDED;
+                        vertical-align: middle;
+                        padding-left: -60px;
+                        margin-right: 10px;
+                        transition: 0.3s ease;
+                        margin-top: -5px;
+                    }
+                    input[type="checkbox"]:checked + label::before {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        background-color: #000;
+                        background-image: url(../icons/check.svg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+                &__item-pay {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    input[type="radio"] {
+                        display: none;
+                    }
+                    label {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        font-size: 17px;
+                        @include dark;
+                        font-weight: 400;
+                        transition: 0.3s ease;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                        .delivery__wrap__contacts__form__item__pay-label__span {
+                            font-size: 17px;
+                            @include dark;
+                            font-weight: 400;
+                            transition: 0.3s ease;
+                            span {
+                                font-size: 14px;
+                                color: #828282;
+                            }
+                        }
+                    }
+                    label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100%;
+                        background-color: #fff;
+                        vertical-align: middle;
+                        padding-left: -60px;
+                        margin-right: 10px;
+                        transition: 0.3s ease;
+                        margin-top: -5px;
+                    }
+                    input:checked + label::before {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        background-color: #000;
+                        background-image: url(../icons/radio-btn.svg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+                &__btn {
+                    @include dark-bg;
+                    margin-top: 40px;
+                    width: 100%;
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    text-align: center;
+                    padding: 12px 60px 12px 60px;
+                    display: flex;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    border: none;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+
+        &__products {
+            width: 45%;
+            margin-left: 2%;
+            &__cart {
+                position: relative;
+                .delivery__accordion__control {
+                    display: none;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    background-color: #F2F2F2;
+                    border: none;
+                    padding: 15px 20px;
+                    cursor: pointer;
+                    &__left {
+                        display: flex;
+                        align-items: center;
+                        &__icon {
+                            margin-right: 10px;
+                        }
+                        &__text {
+                            font-size: 16px;
+                            @include dark;
+                            font-weight: 400;
+                            margin-right: 10px;
+                        }
+                    }
+                    &__right {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        &__price {
+                            align-items: center;
+                            font-size: 24px;
+                            font-weight: 500;
+                            @include dark;
+                            span {
+                                font-size: 24px;
+                                font-weight: 500;
+                                @include dark;
+                            }
+                        }
+                    }
+                }
+                .delivery__accordion__content {
+                    max-height: 100%;
+                    opacity: 1;
+                    overflow: hidden;
+                    position: relative;
+                    transition: 0.5s ease-in;
+                    &__wrap {
+                        position: relative;
+                        &__item {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            &:not(:last-child) {
+                                margin-bottom: 20px;
+                            }
+                            &__photo {
+                                width: 20%;
+                                height: auto;
+                            }
+                            &__info {
+                                margin-left: 5%;
+                                width: 80%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                &__name {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    @include dark;
+                                    letter-spacing: 0.1em;
+                                    text-transform: uppercase;
+                                }
+                                &__price {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    @include dark;
+                                    span {
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__price {
+                        display: flex;
+                        flex-direction: column;
+                        border-top: 2px solid #EDEDED;
+                        border-bottom: 2px solid #EDEDED;
+                        margin-top: 30px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        &__item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &__title {
+                                font-size: 16px;
+                                font-weight: 400;
+                                @include dark;
+                            }
+                            &__number {
+                                font-size: 20px;
+                                font-weight: 500;
+                                @include dark;
+                            }
+                            &:first-child {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                    &__total {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        align-items: center;
+                        &__title {
+                            font-size: 20px;
+                            font-weight: 400;
+                            @include dark;
+                        }
+                        &__number {
+                            font-size: 24px;
+                            font-weight: 500;
+                            @include dark;
+                        }
                     }
                 }
             }

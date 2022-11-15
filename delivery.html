@@ -62,9 +62,14 @@
 
     <section class="delivery">
         <div class="container">
+            <h3 class="delivery__title-mob">Оформление заказа</h3>
             <div class="delivery__wrap">
                 <div class="delivery__wrap__contacts">
                     <h3 class="delivery__wrap__contacts__title">Оформление заказа</h3>
+                    <div class="delivery__wrap__contacts__cabinet">
+                        <h3 class="delivery__wrap__contacts__cabinet__title">Авторизация</h3>
+                        <a href="#" class="delivery__wrap__contacts__cabinet__btn">Войти или зарегистрироваться</a>
+                    </div>
                     <form action="#" class="delivery__wrap__contacts__form">
                         <h3 class="delivery__wrap__contacts__form__title">Контактные данные</h3>
                         <div class="delivery__wrap__contacts__form__item">
@@ -82,14 +87,114 @@
 
                         <h3 class="delivery__wrap__contacts__form__title">Доставка</h3>
                         <div class="delivery__wrap__contacts__form__item">
+                            <p class="delivery__wrap__contacts__form__item__name">Страна <span>*</span></p>
+                            <select name="country" id="country" class="delivery__wrap__contacts__form__item__select">
+                                <option value="Россия" class="delivery__wrap__contacts__form__item__select__option">Россия</option>
+                            </select>
+                        </div>
+                        
+                        <div class="delivery__wrap__contacts__form__item">
                             <label for="formArea" class="delivery__wrap__contacts__form__item__label">Населенный пункт <span>*</span></label>
                             <input type="email" id="formArea" class="delivery__wrap__contacts__form__item__input" required>
                         </div>
+
+                        <div class="delivery__wrap__contacts__form__item">
+                            <label for="mailIndex" class="delivery__wrap__contacts__form__item__label">Почтовый индекс</label>
+                            <input type="number" id="mailIndex" class="delivery__wrap__contacts__form__item__input">
+                        </div>
+
+                        <div class="delivery__wrap__contacts__form__item">
+                            <label for="address" class="delivery__wrap__contacts__form__item__label">Улица</label>
+                            <input type="text" id="address" class="delivery__wrap__contacts__form__item__input">
+                        </div>
+
+                        <div class="delivery__wrap__contacts__form__home">
+                            <div class="delivery__wrap__contacts__form__home__item">
+                                <label for="home" class="delivery__wrap__contacts__form__home__item__label">Дом</label>
+                                <input type="text" id="home" class="delivery__wrap__contacts__form__home__item__input">
+                            </div>
+                            <div class="delivery__wrap__contacts__form__home__item">
+                                <label for="flat" class="delivery__wrap__contacts__form__home__item__label">Квартира</label>
+                                <input type="text" id="flat" class="delivery__wrap__contacts__form__home__item__input">
+                            </div>
+                        </div>
+
+                        <div class="delivery__wrap__contacts__form__item">
+                            <label for="comment" class="delivery__wrap__contacts__form__home__item__label">Комментарии к заказу</label>
+                            <textarea type="text" id="comment" name="comment" class="delivery__wrap__contacts__form__home__item__input"></textarea>
+                        </div>
+
+                        <h3 class="delivery__wrap__contacts__form__title">Покупатель</h3>
+                        <div class="delivery__wrap__contacts__form__item-check">
+                            <input type="checkbox" checked id="checkbox" class="delivery__wrap__contacts__form__item__check-input">
+                            <label for="checkbox" class="delivery__wrap__contacts__form__item__check-label">Подписаться на новости магазина</label>
+                        </div>
+
+                        <h3 class="delivery__wrap__contacts__form__title">Способ оплаты <span>*</span></h3>
+                        <div class="delivery__wrap__contacts__form__item-pay">
+                            <input type="radio" checked id="pay" class="delivery__wrap__contacts__form__item__pay-input">
+                            <label for="pay" class="delivery__wrap__contacts__form__item__pay-label">
+                                <span class="delivery__wrap__contacts__form__item__pay-label__span">CloudPayment
+                                    <br>
+                                    <span>Оплата картой</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="delivery__wrap__contacts__form__btn">Подтвердить заказ</button>
                     </form>
-                    
                 </div>
 
-                <div class="delivery__wrap__products"></div>
+                <div class="delivery__wrap__products">
+                    <div class="delivery__wrap__products__cart">
+                        <button class="delivery__accordion__control accordion__control" aria-expanded="false">
+                            <div class="delivery__accordion__control__left">
+                                <img src="icons/cart.svg" alt="cart" class="delivery__accordion__control__left__icon">
+                                <div class="delivery__accordion__control__left__text">Ваш заказ</div>
+                                <img src="icons/arrow-down.svg" alt="icon" class="delivery__accordion__control__left__arrow">
+                            </div>
+                            <div class="delivery__accordion__control__right">
+                                <div class="delivery__accordion__control__right__price">24 000 <span> ₽ </span> </div>
+                            </div>
+                        </button>
+                        <div class="delivery__accordion__content accordion__content" aria-hidden="true">
+                           <div class="delivery__accordion__content__wrap">
+                                <div class="delivery__accordion__content__wrap__item">
+                                    <img src="images/products/item-3.webp" alt="photo" class="delivery__accordion__content__wrap__item__photo">
+                                    <div class="delivery__accordion__content__wrap__item__info">
+                                        <div class="delivery__accordion__content__wrap__item__info__name">Брюки «MEN’S» <span>(S)</span></div>
+                                        <div class="delivery__accordion__content__wrap__item__info__price">
+                                            1x <span>15 000 ₽</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delivery__accordion__content__wrap__item">
+                                    <img src="images/products/item-4.webp" alt="photo" class="delivery__accordion__content__wrap__item__photo">
+                                    <div class="delivery__accordion__content__wrap__item__info">
+                                        <div class="delivery__accordion__content__wrap__item__info__name">Костюм «MEN’S» <span>(L)</span></div>
+                                        <div class="delivery__accordion__content__wrap__item__info__price">
+                                            1x <span>9 000 ₽</span>   
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="delivery__accordion__content__price">
+                                <div class="delivery__accordion__content__price__item">
+                                    <p class="delivery__accordion__content__price__item__title">Сумма по товарам</p>
+                                    <div class="delivery__accordion__content__price__item__number">25 000 ₽</div>
+                                </div>
+                                <div class="delivery__accordion__content__price__item">
+                                    <p class="delivery__accordion__content__price__item__title">Стоимость доставки</p>
+                                    <div class="delivery__accordion__content__price__item__number">0 ₽</div>
+                                </div>
+                           </div>
+                           <div class="delivery__accordion__content__total">
+                                <p class="delivery__accordion__content__total__title">Итого:</p>
+                                <div class="delivery__accordion__content__total__number">25 000 ₽</div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -106,13 +211,13 @@
                     <a href="#" target="_blank" class="footer__wrap__social__link">pinterest</a>
                 </div>
                 <div class="footer__wrap__content footer__wrap__content-other">
-                    <a href="#" target="_blank" class="footer__wrap__content__link">контакты</a>
-                    <div class="footer__wrap__content__divider">|</div>
-                    <a href="#" target="_blank" class="footer__wrap__content__link">подарочная карта</a>
-                    <div class="footer__wrap__content__divider">|</div>
-                    <a href="#" target="_blank" class="footer__wrap__content__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ И ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
-                    <div class="footer__wrap__content__divider">|</div>
-                    <a href="#" target="_blank" class="footer__wrap__content__link">УСЛОВИЯ ПОКУПКИ</a>
+                    <a href="contacts.html" class="footer__wrap__content__link">контакты</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="gift-card.html" class="footer__wrap__content__link">подарочная карта</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="privacy.html" class="footer__wrap__content__link">Оферта и ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <div class="footer__wrap__content__divider divider-footer-other">|</div>
+                    <a href="exchange.html" class="footer__wrap__content__link">УСЛОВИЯ ПОКУПКИ</a>
                 </div>
             </div>
         </div>
