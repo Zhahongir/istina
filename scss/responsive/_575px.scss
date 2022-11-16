@@ -506,5 +506,31 @@
     .card__wrap__info__size__res {
         font-size: 15px;
     }
+
+    .notification {
+        top: 60px;
+        right: 20px;
+    }
     
+    .notification__wrap__item-add__text {
+        font-size: 14px;
+    }
+
+    .notification__wrap__item-delete__text {
+        font-size: 14px;
+    }
+    
+    .notification__wrap__item-add {
+        padding: 12px 15px 10px 15px;
+    }
+
+    .notification__wrap__item-delete {
+        padding: 12px 14px 10px 14px;
+    }
+
+    .notification__wrap__item-add__icon {
+        width: 12px;
+        transform: translateY(-2px);
+        margin-right: 7px;
+    }
 }

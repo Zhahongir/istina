@@ -95,6 +95,108 @@ accContent.addEventListener("click", function (e) {
 });
 
 
-let selector = document.querySelector("#formPhone");
-let im = new Inputmask ("+7 (999) 999-99-99");
-im.mask(selector);
+// let selector = document.querySelector("#formPhone");
+// let im = new Inputmask ("+7 (999) 999-99-99");
+// im.mask(selector);
+
+
+// Notification Favorites
+function heartFavorite() {
+    const heartFavoriteInput = document.getElementById('heart-item');
+
+    const notificationFavoriteAdd = document.getElementById('notificationFavoriteAdd');
+    const notificationFavoriteDelete = document.getElementById('notificationFavoriteDelete');
+
+    if (heartFavoriteInput.checked) {
+        notificationFavoriteAdd.classList.toggle('notification__wrap__item-add-on');
+
+        setTimeout(function() {
+            notificationFavoriteAdd.classList.remove('notification__wrap__item-add-on');
+        }, 2000);
+
+        notificationFavoriteDelete.classList.remove('notification__wrap__item-delete-on');
+
+    } else {
+        notificationFavoriteDelete.classList.toggle('notification__wrap__item-delete-on');
+        
+        setTimeout(function() {
+            notificationFavoriteDelete.classList.remove('notification__wrap__item-delete-on');
+        }, 2000);
+
+        notificationFavoriteAdd.classList.remove('notification__wrap__item-add-on');
+    }
+}
+
+
+// Notification Page Favorites 
+// window.addEventListener('click', function (event) {
+
+//     let heartPageFavoriteInput = document.getElementsById('heart-item-second');
+//     let heartPageFavoriteItem = document.getElementById('productsWrapFavorite');
+
+//     const notificationFavoriteAdd = document.getElementById('notificationFavoriteAdd');
+//     const notificationFavoriteDelete = document.getElementById('notificationFavoriteDelete');
+
+//     heartPageFavoriteInput.addEventListener('click', function(e) {
+//         if (heartPageFavoriteInput.checked) {
+//             notificationFavoriteAdd.classList.toggle('notification__wrap__item-add-on');
+    
+//             console.log('Выделен');
+    
+//             setTimeout(function() {
+//                 notificationFavoriteAdd.classList.remove('notification__wrap__item-add-on');
+//             }, 2000);
+    
+//             notificationFavoriteDelete.classList.remove('notification__wrap__item-delete-on');
+    
+//         } else {
+//             console.log('Не выделен');
+//             notificationFavoriteDelete.classList.toggle('notification__wrap__item-delete-on');
+            
+//             setTimeout(function() {
+//                 notificationFavoriteDelete.classList.remove('notification__wrap__item-delete-on');
+//             }, 2000);
+    
+//             console.log('Не выделен');
+    
+//             heartPageFavoriteItem.style.display = 'none';
+//         }
+//     });
+
+// });
+
+
+
+// function heartPageFavorite() {
+//     const heartPageFavoriteInput = document.querySelectorAll('.products__wrap__item__head__favorite__input');
+//     const heartPageFavoriteItem = document.getElementById('productsWrapFavorite');
+
+//     const notificationFavoriteAdd = document.getElementById('notificationFavoriteAdd');
+//     const notificationFavoriteDelete = document.getElementById('notificationFavoriteDelete');
+
+//     if (heartPageFavoriteInput.checked) {
+//         notificationFavoriteAdd.classList.toggle('notification__wrap__item-add-on');
+
+//         console.log('Выделен');
+
+//         setTimeout(function() {
+//             notificationFavoriteAdd.classList.remove('notification__wrap__item-add-on');
+//         }, 2000);
+
+//         notificationFavoriteDelete.classList.remove('notification__wrap__item-delete-on');
+
+//     } else {
+//         console.log('Не выделен');
+//         notificationFavoriteDelete.classList.toggle('notification__wrap__item-delete-on');
+        
+//         setTimeout(function() {
+//             notificationFavoriteDelete.classList.remove('notification__wrap__item-delete-on');
+//         }, 2000);
+
+//         console.log('Не выделен');
+
+//         heartPageFavoriteItem.style.display = 'none';
+//     }
+// }
+
+

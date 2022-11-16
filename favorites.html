@@ -63,8 +63,11 @@
             <div class="products__head">
                 <h4 class="products__head__name">Избранное</h4>
             </div>
+            <div class="products__empty">
+                <h5 class="products__empty__text">Список избранного пуст</h5>
+            </div>
             <div class="products__wrap">
-                <a href="card.html" class="products__wrap__item">
+                <a href="card.html" class="products__wrap__item products__wrap-favorite">
                     <div class="products__wrap__item__head">
                         <img src="images/products/item-3.webp" alt="photo" class="products__wrap__item__head__photo">
                         <img src="images/products/item-5.webp" alt="photo" class="products__wrap__item__head__photo-second favorites-two-photo">
@@ -78,7 +81,7 @@
                         <p class="products__wrap__item__content__price">9 000 ₽</p>
                     </div>
                 </a>
-                <a href="card.html" class="products__wrap__item">
+                <a href="card.html" class="products__wrap__item" id="productsWrapFavorite">
                     <div class="products__wrap__item__head">
                         <img src="images/products/item-4.webp" alt="photo" class="products__wrap__item__head__photo">
                         <img src="images/products/item-2.webp" alt="photo" class="products__wrap__item__head__photo-second favorites-two-photo">
@@ -120,6 +123,20 @@
         </div>
     </footer>
     
+
+    <!-- Notification -->
+    <div class="notification">
+        <div class="notification__wrap">
+            <div class="notification__wrap__item-add" id="notificationFavoriteAdd">
+                <img src="icons/check-notification.svg" alt="icon" class="notification__wrap__item-add__icon">
+                <p class="notification__wrap__item-add__text">Товар добавлен в избранное</p>
+            </div>
+            <div class="notification__wrap__item-delete" id="notificationFavoriteDelete">
+                <p class="notification__wrap__item-delete__text">Товар удален из избранных</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Menu -->
     <div class="bg-menu"></div>

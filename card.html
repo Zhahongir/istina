@@ -123,8 +123,8 @@
                         <button class="card__wrap__info__btns__buy">В корзину</button>
 
                         <div class="card__wrap__info__btns__favorite">
-                            <input id="heart-item" type="checkbox" class="card__wrap__info__btns__favorite__input">
-                            <label for="heart-item" class="card__wrap__info__btns__favorite__label"></label>
+                            <input id="heart-item" type="checkbox" class="card__wrap__info__btns__favorite__input" onclick="heartFavorite()">
+                            <label for="heart-item" id="heart-label-fav" class="card__wrap__info__btns__favorite__label"></label>
                         </div> 
                     </div>
                     <ul class="card__wrap__info__data">
@@ -255,6 +255,19 @@
     </footer>
     
 
+    <!-- Notification -->
+    <div class="notification">
+        <div class="notification__wrap">
+            <div class="notification__wrap__item-add" id="notificationFavoriteAdd">
+                <img src="icons/check-notification.svg" alt="icon" class="notification__wrap__item-add__icon">
+                <p class="notification__wrap__item-add__text">Товар добавлен в избранное</p>
+            </div>
+            <div class="notification__wrap__item-delete" id="notificationFavoriteDelete">
+                <p class="notification__wrap__item-delete__text">Товар удален из избранных</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Menu -->
     <div class="bg-menu"></div>
 
@@ -353,36 +366,6 @@
     <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
     <script src="js/accordion.js"></script>
-
-    <!-- <script>
-        const accordion1 = new GraphAccordion('.accordion-1', {
-	        speed: 500
-        });
-
-        const accordion2 = new GraphAccordion('.accordion-2', {
-	        speed: 500
-        });
-
-        const accordion3 = new GraphAccordion('.accordion-3', {
-	        speed: 500
-        });
-
-        const accordion4 = new GraphAccordion('.accordion-4', {
-	        speed: 500
-        });
-
-        const accordion5 = new GraphAccordion('.accordion-5', {
-	        speed: 500
-        });
-
-        const accordion6 = new GraphAccordion('.accordion-6', {
-	        speed: 500
-        });
-
-        const accordion7 = new GraphAccordion('.accordion-7', {
-	        speed: 500
-        });
-    </script> -->
 
     <script>
         // Glightbox
